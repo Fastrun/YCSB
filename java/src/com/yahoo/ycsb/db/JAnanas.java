@@ -15,7 +15,7 @@ package com.yahoo.ycsb.db;
  */
 public class JAnanas {
     static {
-        System.loadLibrary("com_yahoo_ycsb_db_JAnanas"); //To load JAnanas
+        System.load("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db/libcom_yahoo_ycsb_db_JAnanas.so"); //To load JAnanas
     }
 
     /// Pointer to the underlying C++ Ananas object associated with this

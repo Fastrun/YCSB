@@ -12,16 +12,10 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-extern "C" {
-#include "../../../../../../include/kvf/kvf.h"
-}
-extern "C" {
-#include "../../../../../../include/kvf/kvf_err_code.h"
-}
-extern "C" {
-#include "../../../../../../include/kvf/kvf_api.h"
-}
-
+#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf.h"
+#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf_err_code.h"
+#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf_api.h"
+#include "kvf_test.h"
 #include "com_yahoo_ycsb_db_JAnanas.h"
 
 
@@ -40,21 +34,21 @@ extern "C" {
  * avoids having to manually do the annoying GetStringUTFChars /
  * ReleaseStringUTFChars dance. 
  */
-class JStringGetter {
-  private:
-    JNIEnv* env;
-    jstring jString;
-
-  public:
-    const char* astring;
-  public:
-    JStringGetter(JNIEnv* env, jstring jString)
-        : env(env)
-        , jString(jString)
-        , astring(env->GetStringUTFChars(jString, 0))
-    {
-        check_null(astring, "GetStringUTFChars failed");
-    }
+//class JStringGetter {
+//  private:
+//    JNIEnv* env;
+//    jstring jString;
+//
+//  public:
+//    const char* astring;
+//  public:
+//    JStringGetter(JNIEnv* env, jstring jString)
+//        : env(env)
+//        , jString(jString)
+//        , astring(env->GetStringUTFChars(jString, 0))
+//    {
+//        check_null(astring, "GetStringUTFChars failed");
+//    }
 /*why errors here?
     ~JStringGetter()
     {
@@ -63,7 +57,7 @@ class JStringGetter {
     }
 */
 
-};
+//};
 
 /**
  * This class provides a simple means of accessing jbyteArrays as
@@ -71,24 +65,24 @@ class JStringGetter {
  * This avoids having to manually do the annoying GetByteArrayElements /
  * ReleaseByteArrayElements dance.
  */
-class JByteArrayGetter {
-  private:
-    JNIEnv* env;
-    jbyteArray jByteArray;
+//class JByteArrayGetter {
+//  private:
+//    JNIEnv* env;
+//    jbyteArray jByteArray;
 
-  public:
-    void* const pointer;
-    const jsize length;
-  public:
-    JByteArrayGetter(JNIEnv* env, jbyteArray jByteArray)
-        : env(env)
-        , jByteArray(jByteArray)
-        , pointer(static_cast<void*>(env->GetByteArrayElements(jByteArray, 0)))
-        , length(env->GetArrayLength(jByteArray))
-    {
-        check_null(pointer, "GetByteArrayElements failed");
-    }
-
+ // public:
+  //  void* const pointer;
+ //   const jsize length;
+//  public:
+//    JByteArrayGetter(JNIEnv* env, jbyteArray jByteArray)
+//        : env(env)
+//        , jByteArray(jByteArray)
+//        , pointer(static_cast<void*>(env->GetByteArrayElements(jByteArray, 0)))
+//        , length(env->GetArrayLength(jByteArray))
+//    {
+//        check_null(pointer, "GetByteArrayElements failed");
+//    }
+//
    /*
     ~JByteArrayGetter()
     {
@@ -100,14 +94,14 @@ class JByteArrayGetter {
     }
 */
 
-};
+//};
 // the following method is not applicable
-static kvf_type_t*
-getKvf(JNIEnv* env, jobject jkvf_type_t)
+//static kvf_type_t*
+getKvf(JNIEnv *env, jobject jkvf_type_t)
 {
-    jclass cls = env->GetObjectClass(jkvf_type_t);// where to register?
-    jfieldID fieldId = env->GetFieldID(cls, "ramcloudObjectPointer", "J");
-    return reinterpret_cast<kvf_type_t*>(env->GetLongField(jkvf_type_t, fieldId));
+//    jclass cls = env->GetObjectClass(jkvf_type_t);// where to register?
+//    jfieldID fieldId = env->GetFieldID(cls, "ramcloudObjectPointer", "J");
+//    return reinterpret_cast<kvf_type_t*>(env->GetLongField(jkvf_type_t, fieldId));
 }
 
 static void
@@ -154,18 +148,26 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_connect(JNIEnv *env,
                                jstring coordinatorLocator)
 {
     //JStringGetter locator(env, coordinatorLocator);// how is the second parameter used
-    kvf_type_t* kvf = NULL;
-    pool_t* pool = NULL;
-    char * configfile; //
+	kvf_type_t* kvf = malloc(sizeof(kvf_type_t));
+	pool_t* pool = malloc(sizeof(pool_t));
+	char * configfile; //
+	
+	memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
+        memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
+
  //   try {
     	// 1.get kv-lib handle and init
-    	kvf = get_kvf((char*)coordinatorLocator);
-    	kvf_init(kvf, NULL);//where is the configure file parameter?? Ans: temporally NULL
-    	// 2.create pool and open it.
-    	pool_create("test", configfile, pool);
-    	pool_open(pool);
+    	//kvf = get_kvf((char*)coordinatorLocator);
+    	kvf_load("");//where is the configure file parameter?? Ans: temporally NULL
+    	kvf_register(kvf);
+	printf("registerok\n");
+	kvf_init(kvf, "");
+	printf("init ok\n");
+	// 2.create pool and open it.
+    	pool_create(kvf, "test", "", pool);
+    	//pool_open(pool);
     	int r = kvf_register(kvf);
-    	if (r != RET_OK) {
+   	if (r != RET_OK) {
     		//something go wrong
 
     	}
@@ -174,7 +176,8 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_connect(JNIEnv *env,
 //kvf->clientContext->transportManager->setTimeout(10000);
       //  kvf->clientContext->transportManager->setSessionTimeout(10000);//???
 //    } EXCEPTION_CATCHER(NULL);
-    return reinterpret_cast<jlong>(kvf);
+    //return reinterpret_cast<jlong>(kvf);
+    return (jlong)kvf;
 }
 
 /*
@@ -187,7 +190,9 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_disconnect(JNIEnv *env,
                                   jclass jRamCloud,
                                   jlong ramcloudObjectPointer)
 {
-    delete reinterpret_cast<kvf_type_t*>(ramcloudObjectPointer);
+    //delete reinterpret_cast<kvf_type_t*>(ramcloudObjectPointer);i
+
+   //shutdown(kvf);
 }
 
 /*
@@ -218,12 +223,12 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_createTable__Ljava_lang_String_2I(JNIEnv 
                                                          jint jServerSpan)
 {
     kvf_type_t* kvf = getKvf(env, jRamCloud);
-    JStringGetter tableName(env, jTableName);
+//    JStringGetter tableName(env, jTableName);
     unsigned long long tableId;
 //    try {
 //        tableId = kvf->createTable(tableName.string, jServerSpan);
 //    } EXCEPTION_CATCHER(-1);
-    return static_cast<jlong>(tableId);
+    return (jlong)(tableId);
 }
 
 /*
@@ -237,7 +242,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_dropTable(JNIEnv *env,
                                  jstring jTableName)
 {
     kvf_type_t* kvf = getKvf(env, jRamCloud);
-    JStringGetter tableName(env, jTableName);
+//    JStringGetter tableName(env, jTableName);
 //    try {
 //        kvf->dropTable(tableName.string);
 //    } EXCEPTION_CATCHER();
@@ -254,7 +259,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_getTableId(JNIEnv *env,
                                   jstring jTableName)
 {
     kvf_type_t* kvf = getKvf(env, jRamCloud);
-    JStringGetter tableName(env, jTableName);
+//    JStringGetter tableName(env, jTableName);
     unsigned long long tableId;
 //    try {
 //        tableId = kvf->getTableId(tableName.string);
@@ -274,18 +279,21 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_read(JNIEnv *env,
                                   jbyteArray jKey)
 {
     //kvf_type_t* kvf = getKvf(env, jAnanas);
-    JByteArrayGetter key(env, jKey);
+//    JByteArrayGetter key(env, jKey);
 
 //    Buffer buffer;
     unsigned long long version;
-
+    kv_props_t* props = malloc(sizeof(kv_props_t*));
     string_t value;
     string_t k;
-    k.data = (s8*)key.pointer; // maybe problems here in cast
-    k.len = key.length;
+//*    k.data = (s8*)key.pointer; // maybe problems here in cast
+//*    k.len = key.length;
     pool_t* pool;// = getPool(env, jpool_t); // where to get this?
+//memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
+        memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
+
 //    try {
-        get(pool, &k, &value, NULL, NULL);
+        get(pool, &k, &value, props, NULL);
 //    } EXCEPTION_CATCHER(NULL);
 
 //    jbyteArray jValue = env->NewByteArray(buffer.getTotalLength());
@@ -297,20 +305,16 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_read(JNIEnv *env,
 
     // Note that using 'javap -s' on the class file will print out the method
     // signatures (the third argument to GetMethodID).
-    jclass cls = env->FindClass(PACKAGE_PATH "JRamCloud$Object");
-    check_null(cls, "FindClass failed");
+//*    jclass cls = env->FindClass(PACKAGE_PATH "JRamCloud$Object");
+//*    check_null(cls, "FindClass failed");
 
-    jmethodID methodId = env->GetMethodID(cls,
-                                          "<init>",
-                                          "(L" PACKAGE_PATH "JRamCloud;[B[BJ)V");
-    check_null(methodId, "GetMethodID failed");
+//*    jmethodID methodId = env->GetMethodID(cls,
+//*                                          "<init>",
+//*                                          "(L" PACKAGE_PATH "JRamCloud;[B[BJ)V");
+//*    check_null(methodId, "GetMethodID failed");
 
-    return env->NewObject(cls,
-                          methodId,
-                          jAnanas,
-                          jKey,
-                          jKey,
-                          static_cast<jlong>(version));
+//    return env->NewObject(cls, methodId, jAnanas, jKey, jKey, static_cast<jlong>(version));
+      return NULL;
 }
 
 
@@ -325,18 +329,21 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_remove
   (JNIEnv *env, jobject JAnanas, jlong jpoolId, jbyteArray jKey)
 {
     //kvf_type_t* kvf = NULL;
-	pool_t* pool = NULL;
-
+	pool_t* pool = malloc(sizeof(pool_t));
+	kv_props_t*     props = malloc(sizeof(kv_props_t));
 	//kvf = getKvf(env, jkvf_type_t);
+//	memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
+        memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
+
 	//pool = getPool(env, jpool_t);
 	pool_open(pool);
-	JByteArrayGetter key(env, jKey);
+//	JByteArrayGetter key(env, jKey);
 	string_t k;
-	k.data = (s8*)key.pointer; // maybe problems here in cast
-	k.len = key.length;
+//*	k.data = (s8*)key.pointer; // maybe problems here in cast
+//*	k.len = key.length;
 
-	del(pool, &k, NULL, NULL);
-	pool_close(pool);
+	del(pool, &k, props, NULL);
+//	pool_close(pool);
 
 
 	// maybe use tableId?
@@ -347,7 +354,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_remove
 
 //    	del();
 //    } EXCEPTION_CATCHER(-1);
-    return static_cast<jlong>(version);
+    return (jlong)(version);
 }
 
 
@@ -366,18 +373,22 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_write(JNIEnv *env,
                                       jbyteArray jValue)
 {
     //kvf_type_t* kvf = getKvf(env, jRamCloud);
-    JByteArrayGetter key(env, jKey);
-    JByteArrayGetter value(env, jValue);
+//    JByteArrayGetter key(env, jKey);
+//    JByteArrayGetter value(env, jValue);
     unsigned long long version;	// is this useful?
-	pool_t* pool;// = getPool(env, jPool);
+	pool_t* pool = malloc(sizeof(pool_t));// = getPool(env, jPool);
+	kv_props_t*     props = malloc(sizeof(kv_props_t));
 	string_t akey, avalue;
-	akey.data = (s8*)key.pointer;
-	akey.len = key.length;
-	avalue.data = (s8*)value.pointer;
+//memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
+        memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
+
+//*	akey.data = (s8*)key.pointer;
+//*	akey.len = key.length;
+//*	avalue.data = (s8*)value.pointer;
 //    try {
-        put(pool, &akey, &avalue, NULL, NULL);
+        put(pool, &akey, &avalue, props, NULL);
 //    } EXCEPTION_CATCHER(-1);
-    return static_cast<jlong>(version); // is version required?
+    return (jlong)(version); // is version required?
 }
 
 int main() {
