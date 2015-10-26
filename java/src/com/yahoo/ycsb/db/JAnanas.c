@@ -12,9 +12,9 @@
  * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
-#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf.h"
-#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf_err_code.h"
-#include "../../../../../../../kvf_test/ananas-nvmkv/ananas-master/include/kvf/kvf_api.h"
+#include "../../../../../../../KVF/ananas-master/include/kvf/kvf.h"
+#include "../../../../../../../KVF/ananas-master/include/kvf/kvf_err_code.h"
+#include "../../../../../../../KVF/ananas-master/include/kvf/kvf_api.h"
 #include "kvf_test.h"
 #include "com_yahoo_ycsb_db_JAnanas.h"
 
