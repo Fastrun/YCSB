@@ -22,17 +22,17 @@ s32 nvmkv_kvlib_shutdown(kvf_type_t* kvf){
 
 s32 nvmkv_kv_put(pool_t* pool, const string_t* key, const string_t* value, const kv_props_t* props, const put_options_t* putopts){
         printf("put a key-value\n");
-        return 0;
+        return RET_OK;
 }
 
 s32 nvmkv_kv_get(pool_t* pool, const string_t* key, string_t* value, const kv_props_t* props, const get_options_t* getopts){
         printf("get a key-value\n");
-        return 0;
+        return RET_OK;
 }
 
 s32 nvmkv_kv_del(pool_t* pool, const string_t* key, const kv_props_t* props, const del_options_t* delopts){
         printf("delete a key-value\n");
-        return 0;
+        return RET_OK;
 }
 
 pool_operations_t nvmkv_pool_ops = {

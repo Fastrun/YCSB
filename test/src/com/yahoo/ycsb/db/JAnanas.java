@@ -102,15 +102,6 @@ public class JAnanas {
         return read(tableId, key.getBytes());
     }
 
-    /**
-     * Convenience read() wrapper that take a String key argument.
-     */
-/*    public Object
-    read(long tableId, String key, RejectRules rules)
-    {
-        return read(tableId, key.getBytes(), rules);
-    }
-*/
     
     /**
      * Convenience remove() wrapper that take a String key argument.
@@ -121,15 +112,6 @@ public class JAnanas {
         return remove(tableId, key.getBytes());
     }
 
-    /**
-     * Convenience remove() wrapper that take a String key argument.
-     */
-/*    public long
-    remove(long tableId, String key, RejectRules rules)
-    {
-        return remove(tableId, key.getBytes(), rules);
-    }
-*/
     /**
      * Convenience write() wrapper that take String key and value arguments.
      */
@@ -222,30 +204,32 @@ public class JAnanas {
     {
         JAnanas ananas = new JAnanas("hello");
         long tableId = ananas.createTable("hi");
-        System.out.println("created table, id = " + tableId);
+        System.out.println("J created table, id = " + tableId);
         long tableId2 = ananas.getTableId("hi");
-        System.out.println("getTableId says tableId = " + tableId2);
+        System.out.println("J getTableId says tableId = " + tableId2);
 
-        System.out.println("wrote obj version = " +
+        System.out.println("J wrote obj version = " +
             ananas.write(tableId, "thisIsTheKey", "thisIsTheValue"));
+	System.out.println("ok here");	
+        //JAnanas.Object o =
+	ananas.read(tableId, "thisIsTheKey");
+        //System.out.println("J read object: key = [" + o.getKey() + "], value = ["
+        //    + o.getValue() + "], version = " + o.version);
+//System.out.println("ok here");
+//        ananas.remove(tableId, "thisIsTheKey");
 
-        JAnanas.Object o = ananas.read(tableId, "thisIsTheKey");
-        System.out.println("read object: key = [" + o.getKey() + "], value = ["
-            + o.getValue() + "], version = " + o.version);
-
-        ananas.remove(tableId, "thisIsTheKey");
-
-        try {
-            ananas.read(tableId, "thisIsTheKey");
-            System.out.println("Error: shouldn't have read successfully!");
-        } catch (Exception e) {
+//        try {
+        //    ananas.read(tableId, "thisIsTheKey");
+//            System.out.println("J Error: shouldn't have read successfully!");
+//        } catch (Exception e) {
             // OK
-        }
+//        }
 
-        ananas.write(tableId, "thisIsTheKey", "thisIsTheValue");
+//        ananas.write(tableId, "thisIsTheKey", "thisIsTheValue");
         long before = System.nanoTime();
         for (int i = 0; i < 100000; i++) {
-            JAnanas.Object unused = ananas.read(tableId, "thisIsTheKey");
+            //JAnanas.Object unused =
+//		 ananas.read(tableId, "thisIsTheKey");
         }
         long after = System.nanoTime();
         System.out.println("Avg read latency: " +

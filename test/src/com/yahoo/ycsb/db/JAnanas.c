@@ -17,7 +17,7 @@
 #include "../../../../../../../KVF/ananas-master/include/kvf/kvf_api.h"
 #include "kvf_test.h"
 #include "com_yahoo_ycsb_db_JAnanas.h"
-
+#include <stdio.h>
 
 /// We will need this when using FindClass, etc.
 #define PACKAGE_PATH "com/yahoo/ycsb/db/"
@@ -292,6 +292,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_read(JNIEnv *env,
 //memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
         memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
 
+    printf("read ok in Jananas.c\n");
 //    try {
         get(pool, &k, &value, props, NULL);
 //    } EXCEPTION_CATCHER(NULL);
@@ -305,16 +306,15 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_read(JNIEnv *env,
 
     // Note that using 'javap -s' on the class file will print out the method
     // signatures (the third argument to GetMethodID).
-//*    jclass cls = env->FindClass(PACKAGE_PATH "JRamCloud$Object");
-//*    check_null(cls, "FindClass failed");
+    jclass cls = (*env)->FindClass(env,PACKAGE_PATH "JAnanas$Object");
+    check_null(cls, "FindClass failed");
+    jmethodID methodId = (*env)->GetMethodID(env,cls,
+                                          "<init>",
+                                          "(L" PACKAGE_PATH "JAnanas;[B[BJ)V");
+    check_null(methodId, "GetMethodID failed");
 
-//*    jmethodID methodId = env->GetMethodID(cls,
-//*                                          "<init>",
-//*                                          "(L" PACKAGE_PATH "JRamCloud;[B[BJ)V");
-//*    check_null(methodId, "GetMethodID failed");
-
-//    return env->NewObject(cls, methodId, jAnanas, jKey, jKey, static_cast<jlong>(version));
-      return NULL;
+    return (*env)->NewObject(env,cls, methodId, jAnanas, jKey, jKey, (jlong)(version));
+//      return NULL;
 }
 
 
@@ -329,6 +329,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_remove
   (JNIEnv *env, jobject JAnanas, jlong jpoolId, jbyteArray jKey)
 {
     //kvf_type_t* kvf = NULL;
+    	printf("in del ok\n");
 	pool_t* pool = malloc(sizeof(pool_t));
 	kv_props_t*     props = malloc(sizeof(kv_props_t));
 	//kvf = getKvf(env, jkvf_type_t);
@@ -342,7 +343,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_remove
 //*	k.data = (s8*)key.pointer; // maybe problems here in cast
 //*	k.len = key.length;
 
-	del(pool, &k, props, NULL);
+	del(pool, &k, props, "");
 //	pool_close(pool);
 
 
@@ -379,6 +380,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_write(JNIEnv *env,
 	pool_t* pool = malloc(sizeof(pool_t));// = getPool(env, jPool);
 	kv_props_t*     props = malloc(sizeof(kv_props_t));
 	string_t akey, avalue;
+    LOGI("write ok in Jananas.c\n");
 //memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
         memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
 
