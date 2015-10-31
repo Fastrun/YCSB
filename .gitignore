@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ignore compiled byte code
 target
 
@@ -16,3 +17,4 @@ output*
 *.iws
 
 .DS_Store
+/bin/
