@@ -1,0 +1,412 @@
+3331  execve("/usr/bin/make", ["make", "run"], [/* 57 vars */]) = 0
+3331  open("/lib64/librt.so.1", O_RDONLY) = 3
+3331  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3331  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/usr/lib64/mpich/lib/tls/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/usr/lib64/mpich/lib/tls/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/usr/lib64/mpich/lib/tls/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/usr/lib64/mpich/lib/tls", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/usr/lib64/mpich/lib/x86_64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/usr/lib64/mpich/lib/x86_64", 0x7fffc895ff60) = -1 ENOENT (No such file or directory)
+3331  open("/usr/lib64/mpich/lib/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("/usr/lib64/mpich/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3331  open("/etc/ld.so.cache", O_RDONLY) = 3
+3331  open("/lib64/libc.so.6", O_RDONLY) = 3
+3331  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/lib64/mpich/lib/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/lib64/libpthread.so.0", O_RDONLY) = 3
+3331  open("/usr/lib/locale/locale-archive", O_RDONLY) = 3
+3331  getcwd("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", 4096) = 43
+3331  stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+3331  stat("/usr/gnu/include", 0x7fffc895ef20) = -1 ENOENT (No such file or directory)
+3331  stat("/usr/local/include", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3331  stat("/usr/include", {st_mode=S_IFDIR|0755, st_size=12288, ...}) = 0
+3331  stat(".", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3331  open(".", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+3331  open("Makefile", O_RDONLY)        = 3
+3331  stat("RCS", 0x7fffc895ee50)       = -1 ENOENT (No such file or directory)
+3331  stat("SCCS", 0x7fffc895ee50)      = -1 ENOENT (No such file or directory)
+3331  stat("Makefile", {st_mode=S_IFREG|0664, st_size=1374, ...}) = 0
+3331  stat("run", 0x7fffc895cd80)       = -1 ENOENT (No such file or directory)
+3332  execve("/usr/lib64/qt-3.3/bin/java", ["java", "-Djava.library.path=/home/runhui"..., "com.yahoo.ycsb.db.JAnanas"], [/* 60 vars */]) = -1 ENOENT (No such file or directory)
+3332  execve("/usr/lib64/mpich/bin/java", ["java", "-Djava.library.path=/home/runhui"..., "com.yahoo.ycsb.db.JAnanas"], [/* 60 vars */]) = -1 ENOENT (No such file or directory)
+3332  execve("/usr/local/bin/java", ["java", "-Djava.library.path=/home/runhui"..., "com.yahoo.ycsb.db.JAnanas"], [/* 60 vars */]) = -1 ENOENT (No such file or directory)
+3332  execve("/bin/java", ["java", "-Djava.library.path=/home/runhui"..., "com.yahoo.ycsb.db.JAnanas"], [/* 60 vars */]) = -1 ENOENT (No such file or directory)
+3332  execve("/usr/bin/java", ["java", "-Djava.library.path=/home/runhui"..., "com.yahoo.ycsb.db.JAnanas"], [/* 60 vars */]) = 0
+3332  readlink("/proc/self/exe", "/usr/lib/jvm/java-1.7.0-openjdk-"..., 4096) = 60
+3332  open("/lib64/librt.so.1", O_RDONLY) = 3
+3332  access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../jre/lib/amd64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3332  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/ananas/java/src/com/yahoo/ycsb/db/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/home/runhui/ananas/java/src/com/yahoo/ycsb/db", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/tls/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib64/mpich/lib/tls/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/tls/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib64/mpich/lib/tls", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/x86_64/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib64/mpich/lib/x86_64", 0x7fffda54b7d0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libpthread.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib64/mpich/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3332  open("/etc/ld.so.cache", O_RDONLY) = 3
+3332  open("/lib64/libpthread.so.0", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libjli.so", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libdl.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/lib64/libdl.so.2", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libc.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/lib64/libc.so.6", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../tls/x86_64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../tls/x86_64", 0x7fffda54b3a0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../tls/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../tls", 0x7fffda54b3a0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../x86_64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../x86_64", 0x7fffda54b3a0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64../libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64..", 0x7fffda54b3a0) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libz.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/lib64/libz.so.1", O_RDONLY) = 3
+3332  readlink("/proc/self/exe", "/usr/lib/jvm/java-1.7.0-openjdk-"..., 4096) = 60
+3332  access("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libjava.so", F_OK) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jvm.cfg", O_RDONLY) = 3
+3332  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/server/libjvm.so", {st_mode=S_IFREG|0755, st_size=12564432, ...}) = 0
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/server/libjvm.so", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libstdc++.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/etc/ld.so.cache", O_RDONLY) = 3
+3332  open("/usr/lib64/libstdc++.so.6", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libm.so.6", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/lib64/libm.so.6", O_RDONLY) = 3
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/usr/lib64/mpich/lib/libgcc_s.so.1", O_RDONLY) = -1 ENOENT (No such file or directory)
+3332  open("/lib64/libgcc_s.so.1", O_RDONLY) = 3
+3333  open("/sys/devices/system/cpu", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 3
+3333  open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+3333  lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/server", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/server/libjvm.so", {st_mode=S_IFREG|0755, st_size=12564432, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libverify.so", O_RDONLY) = 3
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libverify.so", O_RDONLY) = 3
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libjava.so", O_RDONLY) = 3
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libjava.so", O_RDONLY) = 3
+3333  stat(".hotspotrc", 0x7f24c6034aa0) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/endorsed", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/xawt/libmawt.so", {st_mode=S_IFREG|0755, st_size=313448, ...}) = 0
+3333  open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 3
+3333  open("/proc/self/maps", O_RDONLY) = 3
+3333  open("/etc/nsswitch.conf", O_RDONLY) = 3
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib64/mpich/lib/libnss_files.so.2", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/etc/ld.so.cache", O_RDONLY) = 3
+3333  open("/lib64/libnss_files.so.2", O_RDONLY) = 3
+3333  open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+3333  open("/tmp/hsperfdata_runhui", O_RDONLY|O_NOFOLLOW) = 3
+3333  open("/tmp/hsperfdata_runhui", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+3333  open(".", O_RDONLY)               = 3
+3333  unlink("3008")                    = 0
+3333  mkdir("/tmp/hsperfdata_runhui", 0755) = -1 EEXIST (File exists)
+3333  lstat("/tmp/hsperfdata_runhui", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  open("/tmp/hsperfdata_runhui", O_RDONLY|O_NOFOLLOW) = 3
+3333  open("/tmp/hsperfdata_runhui", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+3333  open(".", O_RDONLY)               = 3
+3333  open("3332", O_RDWR|O_CREAT|O_NOFOLLOW, 0600) = 5
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", O_RDONLY) = 3
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", O_RDONLY) = 3
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/resources.jar", {st_mode=S_IFREG|0644, st_size=2441984, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/rt.jar", {st_mode=S_IFREG|0644, st_size=67696877, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/sunrsasign.jar", 0x7f24c6034a20) = -1 ENOENT (No such file or directory)
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/jsse.jar", {st_mode=S_IFREG|0644, st_size=688226, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/jce.jar", {st_mode=S_IFREG|0644, st_size=104851, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/charsets.jar", {st_mode=S_IFREG|0644, st_size=3812340, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/rhino.jar", {st_mode=S_IFREG|0644, st_size=834396, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/jfr.jar", 0x7f24c6034a20) = -1 ENOENT (No such file or directory)
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/classes", 0x7f24c6034a20) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/meta-index", O_RDONLY) = 3
+3333  open("/proc/meminfo", O_RDONLY|O_CLOEXEC) = 3
+3333  lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/rt.jar", {st_mode=S_IFREG|0644, st_size=67696877, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/rt.jar", O_RDONLY) = 3
+3333  stat(".hotspot_compiler", 0x7f24c6034700) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/locale/locale-archive", O_RDONLY) = 4
+3333  open("/etc/passwd", O_RDONLY|O_CLOEXEC) = 4
+3333  open("/etc/localtime", O_RDONLY)  = 4
+3333  getcwd("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", 4096) = 43
+3333  open("/sys/devices/system/cpu/online", O_RDONLY|O_CLOEXEC) = 4
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", {st_mode=S_IFREG|0755, st_size=32696, ...}) = 0
+3333  lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", {st_mode=S_IFREG|0755, st_size=32696, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", {st_mode=S_IFREG|0755, st_size=32696, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", {st_mode=S_IFREG|0755, st_size=32696, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libzip.so", O_RDONLY) = 4
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/meta-index", {st_mode=S_IFREG|0644, st_size=452, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/meta-index", O_RDONLY) = 4
+3333  lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  stat("/usr/java/packages/lib/ext/meta-index", 0x7f24c6033110) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = 4
+3333  lstat("/usr", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib", {st_mode=S_IFDIR|0555, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunec.jar", {st_mode=S_IFREG|0644, st_size=15848, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunec.jar", {st_mode=S_IFREG|0644, st_size=15848, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunec.jar", {st_mode=S_IFREG|0644, st_size=15848, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunec.jar", {st_mode=S_IFREG|0644, st_size=15848, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/dnsns.jar", {st_mode=S_IFREG|0644, st_size=10088, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/localedata.jar", {st_mode=S_IFREG|0644, st_size=558202, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/zipfs.jar", {st_mode=S_IFREG|0644, st_size=78037, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/pulse-java.jar", {st_mode=S_IFREG|0644, st_size=69682, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunpkcs11.jar", {st_mode=S_IFREG|0644, st_size=259846, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunjce_provider.jar", {st_mode=S_IFREG|0644, st_size=225671, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/gnome-java-bridge.jar", {st_mode=S_IFREG|0644, st_size=452904, ...}) = 0
+3333  open("/usr/java/packages/lib/ext", O_RDONLY|O_NONBLOCK|O_DIRECTORY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+3333  lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  stat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  stat("/tmp/.java_pid3332", 0x7f24c6034a60) = -1 ENOENT (No such file or directory)
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunec.jar", {st_mode=S_IFREG|0644, st_size=15848, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/dnsns.jar", {st_mode=S_IFREG|0644, st_size=10088, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/localedata.jar", {st_mode=S_IFREG|0644, st_size=558202, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/zipfs.jar", {st_mode=S_IFREG|0644, st_size=78037, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/pulse-java.jar", {st_mode=S_IFREG|0644, st_size=69682, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/pulse-java.jar", {st_mode=S_IFREG|0644, st_size=69682, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/pulse-java.jar", O_RDONLY) = 4
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunpkcs11.jar", {st_mode=S_IFREG|0644, st_size=259846, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/sunjce_provider.jar", {st_mode=S_IFREG|0644, st_size=225671, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/gnome-java-bridge.jar", {st_mode=S_IFREG|0644, st_size=452904, ...}) = 0
+3333  stat("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/gnome-java-bridge.jar", {st_mode=S_IFREG|0644, st_size=452904, ...}) = 0
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/ext/gnome-java-bridge.jar", O_RDONLY) = 5
+3333  lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  stat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas.class", {st_mode=S_IFREG|0664, st_size=2962, ...}) = 0
+3333  open("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas.class", O_RDONLY) = 6
+3333  stat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas.class", {st_mode=S_IFREG|0664, st_size=2962, ...}) = 0
+3333  lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/-", 0x7f24c6030a00) = -1 ENOENT (No such file or directory)
+3333  lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  stat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas$Object.class", {st_mode=S_IFREG|0664, st_size=686, ...}) = 0
+3333  open("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas$Object.class", O_RDONLY) = 6
+3333  stat("/home/runhui/KVF-YCSB/ananas-ycsb/test/src/com/yahoo/ycsb/db/JAnanas$Object.class", {st_mode=S_IFREG|0664, st_size=686, ...}) = 0
+3333  stat("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db/libcom_yahoo_ycsb_db_JAnanas.so", {st_mode=S_IFREG|0775, st_size=12631, ...}) = 0
+3333  lstat("/home", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src/com", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src/com/yahoo", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db", {st_mode=S_IFDIR|0775, st_size=4096, ...}) = 0
+3333  lstat("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db/libcom_yahoo_ycsb_db_JAnanas.so", {st_mode=S_IFREG|0775, st_size=12631, ...}) = 0
+3333  open("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db/libcom_yahoo_ycsb_db_JAnanas.so", O_RDONLY) = 6
+3333  open("/home/runhui/ananas-ycsb/java/src/com/yahoo/ycsb/db/libcom_yahoo_ycsb_db_JAnanas.so", O_RDONLY) = 6
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/jli/libkvf.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/jli/libkvf.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/bin/../lib/amd64/libkvf.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/lib/amd64/libkvf.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.85.x86_64/jre/lib/amd64/libkvf.so.0", O_RDONLY) = -1 ENOENT (No such file or directory)
+3333  open("/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs/libkvf.so.0", O_RDONLY) = 6
+3333  --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x100} ---
+3333  --- SIGSEGV {si_signo=SIGSEGV, si_code=SEGV_MAPERR, si_addr=0x50} ---
+3356  +++ killed by SIGSEGV (core dumped) +++
+3354  +++ killed by SIGSEGV (core dumped) +++
+3352  +++ killed by SIGSEGV (core dumped) +++
+3351  +++ killed by SIGSEGV (core dumped) +++
+3350  +++ killed by SIGSEGV (core dumped) +++
+3355  +++ killed by SIGSEGV (core dumped) +++
+3349  +++ killed by SIGSEGV (core dumped) +++
+3353  +++ killed by SIGSEGV (core dumped) +++
+3348  +++ killed by SIGSEGV (core dumped) +++
+3347  +++ killed by SIGSEGV (core dumped) +++
+3346  +++ killed by SIGSEGV (core dumped) +++
+3345  +++ killed by SIGSEGV (core dumped) +++
+3344  +++ killed by SIGSEGV (core dumped) +++
+3343  +++ killed by SIGSEGV (core dumped) +++
+3342  +++ killed by SIGSEGV (core dumped) +++
+3341  +++ killed by SIGSEGV (core dumped) +++
+3339  +++ killed by SIGSEGV (core dumped) +++
+3338  +++ killed by SIGSEGV (core dumped) +++
+3337  +++ killed by SIGSEGV (core dumped) +++
+3336  +++ killed by SIGSEGV (core dumped) +++
+3335  +++ killed by SIGSEGV (core dumped) +++
+3334  +++ killed by SIGSEGV (core dumped) +++
+3333  +++ killed by SIGSEGV (core dumped) +++
+3340  +++ killed by SIGSEGV (core dumped) +++
+3332  +++ killed by SIGSEGV (core dumped) +++
+3331  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=3332, si_status=SIGSEGV, si_utime=8, si_stime=72} ---
+3331  open("/usr/share/locale/locale.alias", O_RDONLY) = 4
+3331  open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en_US.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en_US/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en.UTF-8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en.utf8/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en/LC_MESSAGES/make.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en_US.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en_US.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en_US/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en.UTF-8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en.utf8/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  open("/usr/share/locale/en/LC_MESSAGES/libc.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+3331  stat("run", 0x7fffc895ed30)       = -1 ENOENT (No such file or directory)
+3331  chdir("/home/runhui/KVF-YCSB/ananas-ycsb/test/src") = 0
+3331  +++ exited with 2 +++

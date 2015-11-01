@@ -1,5 +1,10 @@
 #include "stdio.h"
 #include "../../../../../../../KVF/ananas-master/include/kvf/kvf.h"
+
+#ifndef KVF_YCSB 
+#define KVF_YCSB
+
+
 s32 nvmkv_pool_create(const char* name, const char* config_path, pool_t* pool){
         printf("create a pool\n");
         return RET_OK;
@@ -11,7 +16,7 @@ s32 nvmkv_pool_destroy(pool_t* pool){
 }
 
 s32 nvmkv_kvlib_init(kvf_type_t* kvf, const char* config_file){
-        printf("init a kvf\n");
+        printf("init a kvf changed\n");
         return RET_OK;
 }
 
@@ -87,4 +92,4 @@ kvf_type_t nvmkv_kvlib_std = {
 pool_t nvmkv_pool_std = {
         .kv_ops = &nvmkv_kv_ops
 };
-
+#endif /* KVF_YCSB*/

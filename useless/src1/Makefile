@@ -7,7 +7,7 @@ com.yahoo.ycsb.db.libcom_yahoo_ycsb_db_JAnanas.so : com/yahoo/ycsb/db/com_yahoo_
 	javah -classpath . -d ./com/yahoo/ycsb/db/ com.yahoo.ycsb.db.JAnanas
 com/yahoo/ycsb/db/com_yahoo_ycsb_db_JAnanas.h : com/yahoo/ycsb/db/JAnanas.class
 	        javah -classpath . -d ./com/yahoo/ycsb/db/ com.yahoo.ycsb.db.JAnanas
-com.yahoo.ycsb.db.com_yahoo_ycsb_db_JAnanas.o : com/yahoo/ycsb/db/JAnanas.c
+com.yahoo.ycsb.db.com_yahoo_ycsb_db_JAnanas.o : com/yahoo/ycsb/db/JAnanas.c com/yahoo/ycsb/db/kvf_test.h
 	gcc -c -I/usr/lib/jvm/java/include/\
      -I/usr/lib/jvm/java/include/linux/ -L/home/runhui/kvf_test/ananas-nvmkv/ananas-master/lib/.libs\
          -fPIC -o com/yahoo/ycsb/db/com_yahoo_ycsb_db_JAnanas.o com/yahoo/ycsb/db/JAnanas.c -lkvf

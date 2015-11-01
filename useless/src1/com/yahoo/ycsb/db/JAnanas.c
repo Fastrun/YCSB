@@ -291,12 +291,15 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_read(JNIEnv *env,
     pool_t* pool;// = getPool(env, jpool_t); // where to get this?
 //memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
         memcpy(pool, &nvmkv_pool_std, sizeof(pool_t));
-
-    printf("read ok in Jananas.c\n");
+//	FILE *fp;
+//	char s[] = "read ok in Jananas.c";
+//	fp = fopen("log.txt","a");
+    //fprintf(fp,"%s\n",s);
 //    try {
         get(pool, &k, &value, props, NULL);
 //    } EXCEPTION_CATCHER(NULL);
-
+	printf("hehehe\n");
+	fflush(stdout);
 //    jbyteArray jValue = env->NewByteArray(buffer.getTotalLength());
 //    jbyteArray jValue = env->NewByteArray(buffer.size());
 //    check_null(jValue, "NewByteArray failed");
@@ -331,6 +334,7 @@ JNICALL Java_com_yahoo_ycsb_db_JAnanas_remove
     //kvf_type_t* kvf = NULL;
     	printf("in del ok\n");
 	pool_t* pool = malloc(sizeof(pool_t));
+	fflush(stdout);
 	kv_props_t*     props = malloc(sizeof(kv_props_t));
 	//kvf = getKvf(env, jkvf_type_t);
 //	memcpy(kvf, &nvmkv_kvlib_std, sizeof(kvf_type_t));
